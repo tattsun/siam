@@ -11,5 +11,3 @@ def main
 end
 
 main
-#
-#

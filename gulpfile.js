@@ -8,7 +8,8 @@ var config = {
     grammarFiles: "grammar/*.g",
     grammarOutput: "antlr/",
     sourceDir: "src/**/*.rb",
-    testDir: "test/**/*.rb"
+    testDir: "test/**/*.rb",
+    exampleDir: "example/*.siam"
 };
 
 gulp.task('clean-grammar-build', function() {
@@ -36,6 +37,7 @@ gulp.task('watch', function() {
     gulp.watch(config.grammarFiles, ['build']);
     gulp.watch(config.sourceDir, ['test']);
     gulp.watch(config.testDir, ['test']);
+    gulp.watch(config.exampleDir, ['test']);
 });
 
 gulp.task('test', shell.task([config.runTest]));
