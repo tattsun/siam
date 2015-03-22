@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-require "./siam.rb"
+require_relative "./siam.rb"
 
 def main
   input = ANTLR3::FileStream.new(ARGV[0])
@@ -11,3 +11,5 @@ def main
 end
 
 main
+#
+#

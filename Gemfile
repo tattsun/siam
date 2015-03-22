@@ -1,3 +1,6 @@
 source "https://rubygems.org"
 
-gem "antlr3"
+group :development, :test do
+  gem "antlr3"
+  gem "test-unit"
+end

@@ -1,11 +1,11 @@
 #!/usr/bin/env ruby
 #
-# /Users/tattsun/Dropbox/work/src/github.com/tattsun/siam/syntax/Siam.g
+# /Users/tattsun/Dropbox/work/src/github.com/tattsun/siam/grammar/Siam.g
 # --
 # Generated using ANTLR version: 3.5
 # Ruby runtime library version: 1.10.0
-# Input grammar file: /Users/tattsun/Dropbox/work/src/github.com/tattsun/siam/syntax/Siam.g
-# Generated at: 2015-03-23 05:43:43
+# Input grammar file: /Users/tattsun/Dropbox/work/src/github.com/tattsun/siam/grammar/Siam.g
+# Generated at: 2015-03-23 08:37:45
 #
 
 # ~~~> start load path setup
@@ -75,7 +75,7 @@ module Siam
     include TokenData
 
     begin
-      generated_using( "/Users/tattsun/Dropbox/work/src/github.com/tattsun/siam/syntax/Siam.g", "3.5", "1.10.0" )
+      generated_using( "/Users/tattsun/Dropbox/work/src/github.com/tattsun/siam/grammar/Siam.g", "3.5", "1.10.0" )
     rescue NoMethodError => error
       # ignore
     end
@@ -90,7 +90,7 @@ module Siam
 
     # - - - - - - - - - - - lexer rules - - - - - - - - - - - -
     # lexer rule int! (INT)
-    # (in /Users/tattsun/Dropbox/work/src/github.com/tattsun/siam/syntax/Siam.g)
+    # (in /Users/tattsun/Dropbox/work/src/github.com/tattsun/siam/grammar/Siam.g)
     def int!
       # -> uncomment the next line to manually enable rule tracing
       # trace_in( __method__, 1 )
@@ -151,7 +151,7 @@ module Siam
     end
 
     # lexer rule ws! (WS)
-    # (in /Users/tattsun/Dropbox/work/src/github.com/tattsun/siam/syntax/Siam.g)
+    # (in /Users/tattsun/Dropbox/work/src/github.com/tattsun/siam/grammar/Siam.g)
     def ws!
       # -> uncomment the next line to manually enable rule tracing
       # trace_in( __method__, 2 )

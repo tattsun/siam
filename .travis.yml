@@ -1,0 +1,8 @@
+language: ruby
+rvm:
+  - 2.2.1-p85
+bundler_args: --jobs=2
+script: bundle exec ruby test/run_test.rb
+branches:
+  only:
+    - master
