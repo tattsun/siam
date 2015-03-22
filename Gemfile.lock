@@ -1,0 +1,10 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    antlr3 (1.10.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  antlr3
