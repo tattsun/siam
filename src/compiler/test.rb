@@ -2,12 +2,14 @@
 
 require_relative "./siam.rb"
 
-def main
-  input = ANTLR3::FileStream.new(ARGV[0])
-  lexer = Siam::Lexer.new(input)
-  tokens = ANTLR3::CommonTokenStream.new(lexer)
-  siam_parser = Siam::Parser.new(tokens)
-  puts siam_parser.compilationUnit.inspect
+def main(a)
+  begin
+    input = ANTLR3::StringStream.new(a)
+    lexer = Siam::Lexer.new(input)
+    tokens = ANTLR3::CommonTokenStream.new(lexer)
+    siam_parser = Siam::Parser.new(tokens)
+    siam_parser.compilationUnit
+  rescue
+    puts "rescue"
+  end
 end
-
-main

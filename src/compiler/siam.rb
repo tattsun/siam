@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 # Require Antlr modules
-$:.unshift File.dirname(__FILE__)+"../../"
+$:.unshift File.dirname(__FILE__)+"/../../"
 require "antlr/SiamLexer"
 require "antlr/SiamParser"
 
